@@ -6,3 +6,5 @@ Hello there, nice to e-meet you. I'm an environmental scientist and energy audit
 In this repository, you'll find the projects I'll be working on with effort, please feel free to click on any on the list to know more about my work and how I'll use the skills I discover in this journey.
 
 ## Projects
+
+### 

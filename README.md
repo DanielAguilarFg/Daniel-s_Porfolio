@@ -7,4 +7,4 @@ In this repository, you'll find the projects I'll be working on with effort, ple
 
 ## Projects
 
-### 
+### Calculating Free-to-paid conversion rate using SQL

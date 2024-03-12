@@ -11,4 +11,4 @@ I'm an environmental scientist and energy audit specialist passionate about data
 ### Calculating Free-to-paid conversion rate using SQL
 [View in Github](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/817997768a7f120f80b626cdee1d0491e46ff2eb/SQL%20Free-to-paid%20conversion%20rate)
 
-This project aims to analyse 3 principal values to give a quick glance about the state of the profitability of an online course business, this is a simple project but still gives relevant information to know how to act towards better profits in the future. 
+This project aims to analyze 3 principal engagement values for an online course platform in order to give a glance at the state of the profitability of the course platform. Despite its simplicity, this project gives relevant information as an example of what can be shared with stakeholders to make data-driven decisions to improve business profitability. 

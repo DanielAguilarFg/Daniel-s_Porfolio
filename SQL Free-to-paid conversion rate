@@ -1,2 +1,78 @@
-# Calculating Free-to-paid conversion rate using SQL
+## Calculating Free-to-paid conversion rate using SQL ##
 
+Objective 
+This project aims to analyze 3 principal engagement values for an online course platform in order to give a glance at the state of the profitability of the course platform. 
+Despite its simplicity, this project gives relevant information as an example of what can be shared with stakeholders to make data-driven decisions to improve business 
+profitability.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Insights
+
+  Conversion rate 
+  The first value analyzed will be the conversion rate. According to ispring blog’s on “How to price your online course…” the average conversion rate for online courses 
+  platforms runs from 1,5-5%. Taking into account this range, the conversion rate, obtained from the 365 data database, of 11,29% should be great news, at least in general, 
+  however, it’s not as simple as that, we also have to take into account other facts like the price of each membership needed to reach our goal revenue, the reach that we need 
+  to get to those goals and the reach that we have at the moment. Another way to rephrase the first is that the cheaper the price of the digital content, the higher the 
+  conversion rate that we will need to aim for. Another important aspect to consider should be historical data, both personal and public one, for example, we may be a 
+  startup company rising now and the numbers for our past month were half of the analyzed one, on another example, maybe we are a middle growth company and we see our 
+  numbers decay from past years, however, we check on other similar companies trends (when accessible) and we notice a similar pattern, it may be another issue that’s 
+  outside of our control but that is important information to know that we may be doing well and we just need to keep up with the consumer trends going on at the moment, 
+  it’s all about finding solutions and creating new pathways. 
+  
+  Registration to first-time engagement time
+  The time it takes for students from registration on the platform to their first watched lesson may give us relevant information, if the times are short, it could indicate
+  that the whole platform is user-friendly and generates interest from students to engage in their first lesson. On the contrary a longer duration may indicate that we may 
+  need to work on making the platform either more user-friendly or interesting enough to make new students engage for the first time as soon as possible.
+  
+  First-time engagement to purchase time 
+  The conclusion for this value would be similar if not identical to the previous one, however, it is to be analyzed less rigorously. This time is crucial as it 
+  represents how good of a job the business is doing at creating engaging content that people would spend their money on, but this time waiting for a longer 
+  time doesn’t necessarily represent that our content is not as engaging as intended, maybe customers are looking forward to a time where they know this kind of 
+  content or any other may be cheaper, like black Friday for example. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SQL Code + commentary 
+
+-- Calculate metrics to analyze student engagement and purchasing behavior
+  SELECT 
+-- Calculate the conversion rate: percentage of students who watched content and made a purchase
+    ROUND(COUNT(first_date_purchased) / COUNT(first_date_watched),
+            2) * 100 AS conversion_rate,
+	
+-- Calculate the average number of days between a student's registration and their first content watch
+    ROUND(SUM(days_diff_reg_watch) / COUNT(days_diff_reg_watch),
+            2) AS av_reg_watch,
+            
+-- Calculate the average number of days between a student's first content watch and their first purchase
+    ROUND(SUM(days_diff_watch_purch) / COUNT(days_diff_watch_purch),
+            2) AS av_watch_purch
+  FROM
+    (-- Select columns to retrieve information on students' engagement
+    SELECT 
+        e.student_id,
+		i.date_registered,
+		MIN(e.date_watched) AS first_date_watched, -- Earliest date the student watched content
+		MIN(p.date_purchased) AS first_date_purchased, -- Earliest date the student made a purchase
+        
+    -- Calculate the difference in days between registration date and the first watch date
+		DATEDIFF(MIN(e.date_watched), i.date_registered) AS days_diff_reg_watch,
+        
+		-- Calculate the difference in days between the first watch date and the first purchase date
+		DATEDIFF(MIN(p.date_purchased), MIN(e.date_watched)) AS days_diff_watch_purch
+    FROM
+        student_engagement e
+    JOIN student_info i ON e.student_id = i.student_id
+    
+    -- Left join the student_purchases table to get purchase data (if it exists) for each student
+    LEFT JOIN student_purchases p ON e.student_id = p.student_id
+    
+  -- Filter out records where:
+	-- 1. A purchase was never made OR 
+	-- 2. Content was watched on or before the first purchase
+    GROUP BY e.student_id
+    HAVING first_date_purchased IS NULL
+        OR first_date_watched <= first_date_purchased) a; -- Alias the subquery as 'a' for use in the main query
+
+  

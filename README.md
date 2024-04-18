@@ -9,14 +9,14 @@ I'm an environmental scientist and energy audit specialist passionate about data
 ## Projects
 
 * ### SQL - Calculating Free-to-paid conversion rate
-[View in Github](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/6fbd1fb7c8c93e5fe4069a1b2c84d888a3639466/SQL%20Free-to-paid%20conversion%20rate)
+[View in Github](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/6fbd1fb7c8c93e5fe4069a1b2c84d888a3639466/SQL%20Free-to-paid%20conversion%20rate) //
 [Download extended description from GitHub](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/645f7f3bb47141cc320a1f05947b3fd6233b0de0/Project's%20Files/1.%20Project-%20Free%20to%20Paid%20Ratio%20-%20SQL.docx)
 
   #### Description:
   This project aims to analyze 3 principal engagement values for an online course platform in order to give a glance at the state of the profitability of the course platform. Despite its simplicity, this project gives relevant information as an example of what can be shared with stakeholders to make data-driven decisions to improve business profitability. 
 
 * ### Tableau - News Feed Portal Analysis
-[View in Tableau](https://public.tableau.com/views/NewsfeedAnalysisProject/NewsfeedAnalysisDashboard?:language=es-ES&:sid=&:display_count=n&:origin=viz_share_link)
+[View in Tableau](https://public.tableau.com/views/NewsfeedAnalysisProject/NewsfeedAnalysisDashboard?:language=es-ES&:sid=&:display_count=n&:origin=viz_share_link) //
 [Download extended description from GitHub](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/645f7f3bb47141cc320a1f05947b3fd6233b0de0/Project's%20Files/3.%20Project-%20Newsfeed%20Analysis%20-%20Tableau.docx)
 
   #### Description:
@@ -25,7 +25,7 @@ I'm an environmental scientist and energy audit specialist passionate about data
   This data visualization showcase is done by analyzing a data set containing information related to a website’s newsfeed, in this data set, we have information like the number of posts, type of posts, and user interaction information such as likes and comments, as well as number of visits to the newsfeed and active users. 
 
 * ### Excel - Soccer Transfers Analysis
-[Download from GitHub](https://public.tableau.com/views/NewsfeedAnalysisProject/NewsfeedAnalysisDashboard?:language=es-ES&:sid=&:display_count=n&:origin=viz_share_link)
+[Download from GitHub](https://public.tableau.com/views/NewsfeedAnalysisProject/NewsfeedAnalysisDashboard?:language=es-ES&:sid=&:display_count=n&:origin=viz_share_link) //
 [Download extended description from GitHub](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/645f7f3bb47141cc320a1f05947b3fd6233b0de0/Project's%20Files/4.%20Soccer%20Transfers%20Analysis%20-%20Excel.docx)
 
   #### Description:

@@ -25,7 +25,7 @@ I'm an environmental scientist and energy audit specialist passionate about data
   This data visualization showcase is done by analyzing a data set containing information related to a website’s newsfeed, in this data set, we have information like the number of posts, type of posts, and user interaction information such as likes and comments, as well as number of visits to the newsfeed and active users. 
 
 * ### Excel - Soccer Transfers Analysis
-[Download from GitHub](https://public.tableau.com/views/NewsfeedAnalysisProject/NewsfeedAnalysisDashboard?:language=es-ES&:sid=&:display_count=n&:origin=viz_share_link) //
+[Download Excel file from GitHub](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/2bac72cd5e585f0d50af461702bea6e113f8d34a/Football%20data_source.xlsx) //
 [Download extended description from GitHub](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/645f7f3bb47141cc320a1f05947b3fd6233b0de0/Project's%20Files/4.%20Soccer%20Transfers%20Analysis%20-%20Excel.docx)
 
   #### Description:

@@ -24,6 +24,15 @@ I'm an environmental scientist and energy audit specialist passionate about data
   
   This data visualization showcase is done by analyzing a data set containing information related to a website’s newsfeed, in this data set, we have information like the number of posts, type of posts, and user interaction information such as likes and comments, as well as number of visits to the newsfeed and active users. 
 
+* ### Excel - Baby Care Industry Analysis
+[Download Excel file from GitHub](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/2bac72cd5e585f0d50af461702bea6e113f8d34a/Football%20data_source.xlsx) //
+[Download extended description from GitHub](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/645f7f3bb47141cc320a1f05947b3fd6233b0de0/Project's%20Files/4.%20Soccer%20Transfers%20Analysis%20-%20Excel.docx)
+
+  #### Description:
+  The main objective of this project is to showcase the use of Excel data cleaning tools like Remove duplicates, Find and Replace, and Text-to-columns; as well as functions such as VLOOKUP, SUMIFS, COUNTIFS, and RANK to analyze the data on our base data set and the newly created one. This project also focuses strongly on the use of pivot tables and the function GETPIVOTDATA as a tool to better understand and analyze the data we are working with.
+
+  This project was done by analyzing a data set containing information related to baby care products value and volume from 3 different years, on this dataset we find information like Manufacturer, Brand, Type of package and Size, and, as mentioned, the value and volumes for the different years presented.
+
 * ### Excel - Soccer Transfers Analysis
 [Download Excel file from GitHub](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/2bac72cd5e585f0d50af461702bea6e113f8d34a/Football%20data_source.xlsx) //
 [Download extended description from GitHub](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/645f7f3bb47141cc320a1f05947b3fd6233b0de0/Project's%20Files/4.%20Soccer%20Transfers%20Analysis%20-%20Excel.docx)
@@ -32,7 +41,6 @@ I'm an environmental scientist and energy audit specialist passionate about data
   The main objective of this project is to showcase the use of Excel data cleaning tools like Remove duplicates, Find and Replace, and Text-to-columns; as well as functions such as VLOOKUP, SUMIFS, COUNTIFS, and RANK to analyze the data on our base data set and the newly created one. 
 
   This project was done by analyzing a data set containing information related to two different country’s soccer season transfers, on our base dataset we find information like transfers incoming and outgoing by country and continent and the total club-to-club compensations of such transfers.
-
 
   
 

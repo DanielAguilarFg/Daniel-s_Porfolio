@@ -15,6 +15,13 @@ I'm an environmental scientist and energy audit specialist passionate about data
   #### Description:
   This project aims to analyze 3 principal engagement values for an online course platform in order to give a glance at the state of the profitability of the course platform. Despite its simplicity, this project gives relevant information as an example of what can be shared with stakeholders to make data-driven decisions to improve business profitability. 
 
+* ### SQL - Students E-Learning Streaks Analysis
+[View in Github](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/a54ebf9cb1a01c918c1518a8a6d64b9aa3b6edd0/SQL-%20Students_Streaks_Analysis)//
+[Download extended description from GitHub](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/a54ebf9cb1a01c918c1518a8a6d64b9aa3b6edd0/Project's%20Files/%20Project.%20Desc.%20-%20SQL-%20Student%20Streaks%20Analysis.docx)
+
+  #### Description:
+  This SQL project analyzes streak data from an online data analytics platform to identify highly engaged students. Insights gained will guide improvements to the platform and enhance its unique selling proposition.
+
 * ### Tableau - News Feed Portal Analysis
 [View in Tableau](https://public.tableau.com/views/NewsfeedAnalysisProject/NewsfeedAnalysisDashboard?:language=es-ES&:sid=&:display_count=n&:origin=viz_share_link) //
 [Download extended description from GitHub](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/645f7f3bb47141cc320a1f05947b3fd6233b0de0/Project's%20Files/3.%20Project-%20Newsfeed%20Analysis%20-%20Tableau.docx)

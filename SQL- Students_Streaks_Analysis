@@ -1,0 +1,71 @@
+-- MySQL Project-------------------------------------------------------------
+-- Student Streaks Analysis--
+
+[Please refer to the document with the same name in the Project's Files folder to completely
+undersand this project, thanks!]
+
+
+/* First, we defined variables where we will store the ability to count streaks, select user id,
+and select the previous active streak */
+SELECT * FROM user_streaks_sql  ORDER BY user_id;
+
+SET @streak_count := 0;
+SET @prev_user_id := NULL;
+SET @prev_streak_active := NULL;
+
+SELECT @streak_count;
+SELECT @prev_user_id;
+SELECT @prev_streak_active;
+
+/* Next, we will calculate the streak lenghts, by using the user-defined variables, this will be
+stored in a temporary table. 
+*/
+
+CREATE TEMPORARY TABLE streaks_new AS (
+  SELECT 
+    user_id,
+    streak_created,
+    streak_active,
+    streak_frozen,
+    (
+      -- Here we compare the same user's active streak to see if it matches the previous day entry
+      CASE
+        WHEN @prev_user_id = user_id AND @prev_streak_active = 1 AND streak_active = 1
+        THEN @streak_count := @streak_count + 1
+        ELSE @streak_count := 0 
+      END
+    ) AS streak_length,
+    -- We need to update the values of previous row variables
+    @prev_user_id := user_id,
+    @prev_streak_active := streak_active
+  FROM
+   user_streaks_sql  
+  ORDER BY
+    user_id, streak_created
+);
+
+/* Here we identified the top performers by selecting the ones above 30 consecutive days streak
+*/
+
+SELECT 
+	user_id,
+    # In order to avoid duplicate values we use the agg function MAX to find the highest streak
+    MAX(streak_length) AS max_strk_lenght
+FROM 
+	streaks_new
+GROUP BY
+	user_id
+HAVING
+	MAX(streak_length) >=30
+ORDER BY
+	max_strk_lenght DESC
+;
+
+#Additional query to know hoy many users are in the database
+SELECT
+    COUNT(DISTINCT user_id) AS total_no_users
+FROM streaks_new ; 
+	streaks_new
+    ;
+
+SELECT * FROM streaks_new ; 

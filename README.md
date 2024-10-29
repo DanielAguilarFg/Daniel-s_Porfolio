@@ -52,7 +52,7 @@ I'm an environmental scientist and energy audit specialist passionate about data
 * ### Statistics - Customer Engagement Analysis
 [Download Excel file from GitHub](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/125cea4dd85f48153ad701f70594d32695f7ff2c/Excel%20-%20Statistics_Customer_Engagement_Analysis.xlsx)
 
-#### Description:
+  #### Description:
   This project aims to study the features an e-learning platform added to its website to boost student engagement.
   
   These upgrades were expected to enhance the student experience, strengthen engagement, and support the company's success going forward. In this Customer Engagement Analysis project using Excel, my goal is to analyze whether these platform improvements have indeed increased student engagement.

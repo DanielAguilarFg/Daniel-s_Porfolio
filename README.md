@@ -49,6 +49,12 @@ I'm an environmental scientist and energy audit specialist passionate about data
 
   This project was done by analyzing a data set containing information related to two different country’s soccer season transfers, on our base dataset we find information like transfers incoming and outgoing by country and continent and the total club-to-club compensations of such transfers.
 
+* ### Advanced Excel - Analysis & Visualization of P&L Data 
+[Download Excel file from GitHub]([https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/2aa306f0074be1d7a9d88b8d4698b7ad66f89d60/Excel%20-%20Baby_Care_Products.xlsx](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/30d2ed485f70b9d5b16388677535c9519ee7c071/Excel%20-%20Analysis%20%26%20Visualization%20of%20P%26L%20Data.xlsx)
+
+  #### Description:
+  This Excel project focuses on analyzing and visualizing Profit and Loss (P&L) data downloaded from Bloomberg terminals. The project demonstrates my ability to clean and format raw financial data, apply advanced Excel functions like INDEX, MATCH, MATCH, and create professional, visually appealing charts to present key insights. By conducting trend and profitability margin analysis, I showcase my skills in synthesizing complex financial data into concise, actionable insights. 
+
 * ### Statistics - Customer Engagement Analysis
 [Download Excel file from GitHub](https://github.com/DanielAguilarFg/Daniel-s_Porfolio/blob/125cea4dd85f48153ad701f70594d32695f7ff2c/Excel%20-%20Statistics_Customer_Engagement_Analysis.xlsx)
 
